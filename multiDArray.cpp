@@ -8,6 +8,7 @@ const int ROWS = 3;
 const int COL = 3;
 
 //Prototypes
+void AgeInput(int iage[ROWS][COL]);
 
 // Main Program
 int main()
@@ -16,16 +17,7 @@ int main()
     int age2[ROWS][COL] = {{1, 2, 3},
                            {21, 22, 23},
                            {31, 32, 33}};
-
-    for(int i = 0; i < ROWS; i++)
-    {
-        for(int j = 0; j < COL; j++)
-        {
-            cout << "Enter your age: ";
-            cin >> age[i][j];
-        }
-        cout << endl;
-    }
+    AgeInput(age);
 
     for(int i = 0; i < ROWS; i++)
     {
@@ -39,3 +31,15 @@ int main()
     return 0;
 }
 // Function Definitions
+void AgeInput(int iage[ROWS][COL])
+{
+    for(int i = 0; i < ROWS; i++)
+    {
+        for(int j = 0; j < COL; j++)
+        {
+            cout << "Enter your age: ";
+            cin >> iage[i][j];
+        }
+        cout << endl;
+    }
+}

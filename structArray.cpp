@@ -2,6 +2,7 @@
 // Created by Carson Tyler on 10/3/2017 for CS1410.
 // Copyright ©2017 WSU
 #include <iostream>
+#include <string>
 using namespace std;
 // Constants, Structs, Classes
 struct Part
@@ -9,6 +10,7 @@ struct Part
     int modelNumber;
     int partNumber;
     float cost;
+    string partName;
 };
 const int SIZE = 4;
 
@@ -28,6 +30,9 @@ void PartInput(Part pi[SIZE])
 {
     for(int i = 0; i < SIZE; i++)
     {
+        cout << "Enter part name: ";
+        getline(cin, pi[i].partName);
+        // Flush the buffer?
         cout << "Enter model number: ";
         cin >> pi[i].modelNumber;
         cout << "Enter part number: ";

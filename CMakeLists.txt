@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD 11)
 #set(SOURCE_FILES funcArray.cpp)
 #set(SOURCE_FILES structArray.cpp)
 #set(SOURCE_FILES arrayAsClassMember.cpp)
-set(SOURCE_FILES arrayChar.cpp)
+#set(SOURCE_FILES arrayChar.cpp)
+set(SOURCE_FILES copyString.cpp)
 
 add_executable(10_03Lec ${SOURCE_FILES})

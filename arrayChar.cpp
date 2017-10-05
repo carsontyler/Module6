@@ -15,9 +15,20 @@ int main()
 {
     char st[MAX];
 
-    cout << "Enter your name: ";
-    cin >> st;
-    cout << "Hello " << st << endl;
+    //cout << "Enter your name first: ";
+    //cin >> st;
+    //cout << "Hello " << st << endl;
+
+    // Let the complier calculate the space
+    // String constants
+    // Can take spaces without aa number inside
+    char hi[] = "Hello Weber State University Students!";
+    cout << hi << endl;
+
+    // To support enbedded blanks/spaces, use cin.get() function
+    cout << "Enter your full name: ";
+    cin.get(st,MAX);                                                // Destination, size
+    cout << "Hello " << st;
 
     return 0;
 }

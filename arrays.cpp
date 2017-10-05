@@ -6,6 +6,8 @@ using namespace std;
                                                     // Struct Day{ int day; int month; int year; }; Day d1; d1.month;
                                                     // ARRAY int ari[3]; DECLARES 3 INTEGERS
                                                     // ari[1] catches second element. Element - 1
+                                                    // Int, float, structs, objects, char
+                                                    // Chars -- Stings
 const int SIZE = 3;
 
 int main()
